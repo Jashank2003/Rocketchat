@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    height: 100vh;
+  background : center/cover no-repeat url("/bg.png");
+  overflow: hidden;
+}
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+.logo{
+    /* position: relative;
+    top:20%;
+    left:10%; */
+    display: block;
+    margin: 10px auto;
+   
+    width:80px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: alternate;
+
+    /* height: 100px; */
+}
+
+/* @keyframes logo {
+   
+    0%{
+        width:0px;
+    }
+    10%{
+        width:10px;
+    }
+    25%{
+        width:20px;
+    }
+    50%{
+        width:40px;
+    }
+    75%{
+        width:60px;
+
+    }
+    80%{
+        width:80px
+    }
+    90%{
+        width:90px;
+    }
+    100%{
+        width:80px;
+    } */
+    
+/* } */
+nav h1{
+    font-family: 'Righteous', cursive;
+    display: block;
+    text-align: center;
+    /* margin-top:10px auto; */
+    text-decoration:underline;
+    font-size:1.8rem;
+}
+
+
+.container{
+    max-width: 50%;
+    margin:auto;
+    border: 5px solid rgb(35, 36, 36);
+    border-radius: 10px;
+    height: 70vh;
+    background:none;
+    /* background : center/cover no-repeat url("/bgrc.png"); */
+    /* backface-visibility:visible; */
+    overflow-y:auto;
+}
+
+@media only screen and (min-width:300px) and (max-width:1387px){
+
+    .logo{
+        /* position: relative;
+        top:20%;
+        left:10%; */
+        display: block;
+        margin: 10px auto;
+       
+        width:50px;
+        animation-name: logo;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-fill-mode: alternate;
+    
+        /* height: 100px; */
+    }
+    
+    .container{
+        max-width: 95%;
+        margin:auto;
+        border: 5px solid rgb(35, 36, 36);
+        border-radius: 10px;
+        height: 70vh;
+        background:none;
+        overflow-y:auto;
+    }
+}
+.message{
+    width:24%;
+    color:rgb(0, 0, 0);
+   /* background-color: lightblue; */
+   /* background-color: lightblue; */
+    /* max-width: 30%; */
+    margin:16px 20px;
+    padding:10px 10px;
+    border-radius: 10px;
+    /* opacity: 0.8; */
+    font-weight: 500; 
+    outline: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:1387px){
+
+
+ .message{
+
+    width:49%;
+    color:rgb(0, 0, 0);
+    /* background-color: lightblue; */
+    /* background-color: lightblue; */
+    /* max-width: 30%; */
+    margin:16px 20px;
+    padding:10px 10px;
+    border-radius: 10px;
+    /* opacity: 0.8; */
+    font-weight: 500; 
+    outline:none;
+
+  }
+
+}
+.left{
+    float:left;
+    clear: both;
+    background-color: rgb(31, 30, 30);
+    color: white;
+
+}
+.right{
+    float: right;
+    clear:both;
+    background-color: rgb(249, 194, 255);
+}
+
+#curtime{
+    float: right;
+    font-weight: 200;
+    font-style:italic;
+    margin-top: 7px;
+    margin-bottom: -10px;
+    margin-right: 13px;
+}
+#send-container{
+    display:block;
+    margin:auto;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:300px) and (max-width:1387px){
+ 
+ #send-container{
+    display:block;
+    margin:auto;
+    max-width: 95%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+
+#messageInp{
+    /* display:block; */
+    width: 88%;
+    font-size: 1rem;
+    background: none;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 8px;
+    outline:none;
+}
+
+@media only screen and (min-width:300px) and (max-width:1387px){
+    
+    #messageInp{
+        /* display:block; */
+        width: 75%;
+        font-size: 1rem;
+        background: none;
+        padding:5px;
+        border:2px solid black;
+        border-radius: 8px;
+        outline:none;
+    }
+    
+   
+   }
+
+
+.btn{
+    margin-left: 2px;
+  padding:5px 12px;
+  font-size: 1rem;
+  border:2px solid black;
+  border-radius: 8px;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 400; 
+}
+
+@media only screen and (min-width:300px) and (max-width:1387px){
+    
+    .btn{
+        margin-left: 2px;
+        padding:5px 12px;
+        font-size: 1rem;
+        border:2px solid black;
+        border-radius: 8px;
+        background-color: black;
+        color: whitesmoke;
+        font-weight: 400; 
+    }
+   
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(54, 53, 53);
+
+}

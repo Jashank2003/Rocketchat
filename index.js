@@ -26,6 +26,7 @@ io.on('connection', socket =>{
     })
 })
 
+//  tried to use express to serve static files 
 // const express = require('express');
 // const http = require('http');
 // const socketIO = require('socket.io');

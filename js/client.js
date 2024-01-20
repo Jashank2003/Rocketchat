@@ -13,7 +13,7 @@ const append = (message , position)=>{
     messageElement.classList.add('message');
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
-    var audio = new Audio('ring.mp3');
+    var audio = new Audio('../public/ring.mp3');
     if(position== 'left'){
         audio.play();
     }
